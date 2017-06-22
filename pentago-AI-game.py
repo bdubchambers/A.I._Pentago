@@ -368,61 +368,6 @@ def parse_human_move(usr_inpt):
     return move
 
 
-# def player_turn(you, p1, p2, mat, cur_mov):
-#     """
-#
-#     :param you:
-#     :param p:
-#     :param mat:
-#     :param cur_mov:
-#     :return:
-#     """
-#     if you is 1:
-#         while True:
-#             try:
-#                 print(p + ", it's your turn: ")
-#                 i_mov = input()  # user's input move
-#                 cur_mov = parse_human_move(i_mov)
-#                 break
-#             except (ValueError, NameError, IndexError):
-#                 print("\nERROR: Bad Input!\n**** ****\nPlease enter your move in this format:\n"
-#                       "\t<quadrant#>/<node#> <rotateQuadrant#><L | R>\n"
-#                       "For example, to place your play piece in Quadrant #1, in node #5 (the center),\n"
-#                       "followed by rotating Quadrant #3 to the right, use this command:\n"
-#                       "\t1/5 3R\n,then press 'enter'.\n**** ****\n")
-#
-#     else:
-#         print(p1, "is deliberating...")
-#         cur_mov = mini_max_algo(list(), you, mat, 3, -5, 5, True)[0]
-#
-#     print(cur_mov)
-#     do_move(mat, 'w', cur_mov[0])
-#     mat = rotate(mat, cur_mov[1])
-#
-#     if you is 2:
-#         while True:
-#             try:
-#                 print(p2+", it's your turn: ")
-#                 i_mov = input()
-#                 cur_mov = parse_human_move(i_mov)
-#                 break
-#             except (ValueError, NameError, IndexError):
-#                 print("\nERROR: Bad Input!\n**** ****\nPlease enter your move in this format:\n"
-#                       "\t<quadrant#>/<node#> <rotateQuadrant#><L | R>\n"
-#                       "For example, to place your play piece in Quadrant #1, in node #5 (the center),\n"
-#                       "followed by rotating Quadrant #3 to the right, use this command:\n"
-#                       "\t1/5 3R\n,then press 'enter'.\n**** ****\n")
-#     else:
-#         print(p2, "is deliberating...")
-#         cur_mov = mini_max_algo(list(), you, mat, 3, -5, 5, True)[0]
-#
-#     print(cur_mov)
-#     do_move(mat, 'b', cur_mov[0])
-#     mat = rotate(mat, cur_mov[1])
-#
-#     return mat
-
-
 def pentago(you, p1, p2, mat):
     """
 
